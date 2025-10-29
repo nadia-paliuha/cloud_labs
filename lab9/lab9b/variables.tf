@@ -19,16 +19,16 @@ variable "client_secret" {
   sensitive   = true
 }
 
-variable "group_name" {
-  type = string
-  description = "Name of group"
-  default = "az104-rg9b"
-}
-
 variable "location" {
   type = string
   description = "Location of resources"
   default = "polandcentral"
+}
+
+variable "group_name" {
+  type = string
+  description = "Name of group"
+  default = "az104-rg9b"
 }
 
 variable "dns_name_label" {

@@ -23,8 +23,8 @@ resource "azurerm_resource_group" "rg" {
 resource "azurerm_container_group" "aci" {
   name                = "az104-c1"
   os_type             = "Linux"
-  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
 
   ip_address_type = "Public"
   dns_name_label = var.dns_name_label
