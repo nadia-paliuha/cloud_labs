@@ -19,10 +19,15 @@ variable "client_secret" {
   sensitive   = true
 }
 
+variable "image" {
+  type = string
+  description = "Image for container"
+}
+
 variable "group_name" {
   type = string
   description = "Name of group"
-  default = "az104-rg8"
+  default = "az104-rg9c"
 }
 
 variable "location" {
@@ -30,3 +35,4 @@ variable "location" {
   description = "Location of resources"
   default = "polandcentral"
 }
+
