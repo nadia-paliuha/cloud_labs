@@ -40,7 +40,7 @@ variable "location_region1" {
 variable "location_region2" {
   type = string
   description = "Location of resources"
-  default = "West US"
+  default = "eastus"
 }
 
 variable "admin_name" {

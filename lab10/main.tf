@@ -69,7 +69,7 @@ resource "azurerm_storage_account" "monitor" {
 }
 
 resource "azurerm_recovery_services_vault" "rsv_region2" {
-  name                = var.storage_name_2
+  name                = "az104-rsv-region2"
 
   location            = azurerm_resource_group.rg_2.location
   resource_group_name = azurerm_resource_group.rg_2.name
